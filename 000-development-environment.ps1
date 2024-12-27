@@ -3,7 +3,7 @@
 # To edit your PowerShell profile run 
 # notepad.exe $PROFILE
 
-# Fire up CMD.exe as Administrator and run:
+# Chocolatey - Fire up CMD.exe as Administrator and run:
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 # Enable PowerShell to execute scripts
@@ -27,7 +27,7 @@ choco install azure-cli
 choco install azure-azdev
 
 # Powershell
-choco install powershell-core
+choco install powershell 7
 
 # Azure DevOps CLI
 choco install azure-devops
