@@ -39,12 +39,12 @@ gc() {
 
 # Function to issue Git Push Dry Run
 gpdr() {
-    git push --dry-run --signed=true --set-upstream --verbose
+    git push --dry-run --set-upstream --verbose
     }
 
 # Function to issue Git Push
 gp() {
-    git push --signed=true --set-upstream --verbose
+    git push --set-upstream --verbose
 }
 
 # Function to show branch 
