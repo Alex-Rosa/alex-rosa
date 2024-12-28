@@ -12,7 +12,7 @@ parse_git_branch() {
         # If it is, return the current branch
         git rev-parse --abbrev-ref HEAD
     else
-        # If it isn't, return an error message
+        # If it isn't, return an message
         echo "Not a Git Repository"
     fi
 }
@@ -28,15 +28,24 @@ ga() {
 }
 
 # Function to issue signed Git Commit Dry Run (verbose - difference review)
-gmdr() {
+gcdr() {
     git commit --dry-run --long --all --branch --gpg-sign --verbose --verbose --message "$1"
 }
 
 # Function to issue signed Git Commit
-gm() {
+gc() {
     git commit --all --branch --gpg-sign --verbose --verbose --message "$1"
 }
 
+# Function to issue Git Push Dry Run
+gpdr() {
+    git push --dry-run --signed=true --set-upstream --verbose
+    }
+
+# Function to issue Git Push
+gp() {
+    git push --signed=true --set-upstream --verbose
+}
 
 # Function to show branch 
 gb() {
