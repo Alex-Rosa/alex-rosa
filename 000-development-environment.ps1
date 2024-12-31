@@ -1,3 +1,18 @@
+# Install WinGet on Windows Sandbox
+# https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget
+$progressPreference = 'silentlyContinue'
+Write-Host "Installing WinGet PowerShell module from PSGallery..."
+Install-PackageProvider -Name NuGet -Force | Out-Null
+Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery | Out-Null
+Write-Host "Using Repair-WinGetPackageManager cmdlet to bootstrap WinGet..."
+Repair-WinGetPackageManager
+Write-Host "Done."
+
+# To search for a tool, type winget search <appname>.
+# After you have confirmed that the tool you want is available, you can install the tool by typing winget install <appname>. 
+# The WinGet tool will launch the installer and install the application on your PC.
+# winget --help
+
 # START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/felixrieseberg/windows-development-environment/master/boxstarter
 
 # To edit your PowerShell profile run 
@@ -20,6 +35,9 @@ choco install gh
 # Code Editors: VS Code
 choco install visualstudiocode
 
+# Visual Studio
+choco install visualstudio2022community
+
 # Azure CLI
 choco install azure-cli
 
@@ -36,6 +54,10 @@ choco install azure-devops
 choco install python
 choco install pip
 
+# Java
+winget search Microsoft.OpenJDK
+winget install Microsoft.OpenJDK.21
+
 # Windows Terminal
 #choco install microsoft-windows-terminal
 #choco install oh-my-posh
@@ -51,3 +73,7 @@ choco install pip
 #choco install ruby
 #choco install ruby.devkit
 
+# .NET Core SDK
+#winget search Microsoft.DotNet.SDK
+#winget install Microsoft.DotNet.SDK.9
+#choco install dotnetcore-sdk 9
