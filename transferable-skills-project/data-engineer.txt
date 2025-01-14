@@ -1,0 +1,43 @@
+Senior Data Engineer
+
+Overview
+Cloud Operations + Innovation (CO+I) is the team behind one of the World’s largest Cloud Infrastructures, responsible for powering all Microsoft online Products and Services as well as powering Microsoft’s “Cloud First” mission. Our focus is on smart growth, high efficiency, and delivering trusted experience to customers and partners worldwide, and we are looking for passionate Senior Data Engineer to help achieve that mission.   
+If you want to have a fundamental impact on how Microsoft’s Cloud is deployed and operated globally, be involved with one of the most strategically important teams at Microsoft, and have technical and business acumen, leadership, creativity, and out-of-the-box thinking are some of the skills you bring to the table - this job is for you!   
+We are looking for an exceptional Senior Data Engineer to collaborate with our data science and scheduling Program Manager (PM) team to build solutions that improve our Data Center delivery time. As a Senior Data Engineer you will partner with various teams to develop business requirements to standardize the business input and develop a long-term vision and partnering cross-functionally. 
+Senior Data Engineer  of the CO+I Delivery team is responsible for leading the team of Data Engineers who build and maintain the data pipelines that enable and accelerate Data Science and Machine Learning at Microsoft, including tooling for training, testing, serving, and monitoring models. CO+I continues to invest heavily in business intelligence and data science, and you have the opportunity to lay the foundation for work we do in these areas.
+In alignment with our Microsoft values, we are committed to cultivating an inclusive work environment for all employees to positively impact our culture every day.
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond. 
+This role is located in one of the following hub locations : Atlanta, GA, Redmond, WA, San Antonio, TX, Washington, DC or Phoenix, AZ. 
+Relocation support will be provided, and successful candidates are required to ​relocate or reside within 50 miles of the hub office location. 
+This role is eligible for hybrid or remote work, up to 50%. 
+
+Responsibilities
+Designing and implementing data solutions that drive business impact. Turning data chaos into scalable, efficient, and automated solutions.
+Adept at leading cross-functional teams, defining data strategies, and leveraging the latest technologies in data handling and data analytics.
+Build, Develop, Grow and Lead a team of data engineers. Translate business requirements into data models that are easy to understand and used by different subject areas.
+Design, implement and build data models and pipelines that deliver data with measurable quality under the Service Level Agreement (SLA).
+Partner with product teams, data analysts and engineering teams to build foundational data sets that are trusted, well understood, and aligned with business strategy.
+Improve existing systems, including what areas have gaps that need to be filled, and have started working with the team and stakeholders to scope and prioritize solutions.
+Establish rigorous engineering processes to ensure service quality, delivery of new capabilities, and continuously improving metrics.
+Foster and develop talented engineers capable of developing and running scalable, reliable, maintainable services.
+Work closely with Research and Data Science to influence how optimization and modeling improve our decisions.
+
+Qualifications
+Required/Minimum Qualifications
+Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 4+ years experience in business analytics, data science, software development, data modeling or data engineering work
+OR Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 3+ year(s) experience in business analytics, data science, software development, or data engineering work
+OR equivalent experience.
+3+ years technical engineering experience with coding languages
+3+ years experience in Python and SQL
+
+Other Requirements: 
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:
+Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+
+Additional or Preferred Qualifications
+8+ years of software engineering experience including building large-scale data applications.
+Experience creating high-quality data pipelines.
+Experience bringing people together across teams to successfully collaborate on innovative solutions.
+Experience creating an inclusive and fun work environment where every employee engages effectively.
+Experience growing people and teams through modeling, coaching, and demonstrating care.
+Experience in pioneering, scaling, and optimizing data pipelines, data storage, large-scale data processing/analytics platform, dashboards.
