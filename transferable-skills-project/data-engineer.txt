@@ -41,3 +41,67 @@ Experience bringing people together across teams to successfully collaborate on 
 Experience creating an inclusive and fun work environment where every employee engages effectively.
 Experience growing people and teams through modeling, coaching, and demonstrating care.
 Experience in pioneering, scaling, and optimizing data pipelines, data storage, large-scale data processing/analytics platform, dashboards.
+
+
+Senior Data Engineer - Gaming
+
+Overview
+Xbox Game Studios makes some of the best AAA games on the planet and the opportunities for a motivated Senior Data Engineer are endless.  We are an agile team within Xbox Games Studios Quality tackling a wide range of problems throughout the game development process.  As a Senior Data Engineer in Xbox Games Studios Quality, you will be working with major franchises that include Halo, Forza, Gears of War and Microsoft Casual Suite. You will be working alongside Data Scientist, Applied Scientist, Software and Quality Engineers to find innovative ways to incorporate data solutions into the game development pipeline for major game studios. This position includes flexible work from home options.
+
+Responsibilities
+You will develop and maintain data pipelines, including solutions for data collection, management, transformation, and usage, ensuring accurate data ingestion and readiness for downstream analysis, visualization, and AI model training.
+You will design and implement end-to-end software life cycles, encompassing design, development, CI/CD, service reliability, recoverability, and participation in agile development practices, including on-call rotation.
+You will write code to implement performance monitoring protocols across data pipelines, building visualizations and aggregations to monitor pipeline health. You’ll also implement solutions and self-healing processes that minimize points of failure across multiple product features.
+You will anticipate data governance needs, designing data modeling and handling procedures to ensure compliance with all applicable laws and policies.
+You will implemnent and enforce security and access control measures to protect sensitive resources and data.
+You will Perform database administration tasks, including maintenance, and performance monitoring.
+You will collaborate with Product Managers, Data and Applied Scientists, Software and Quality Engineers, and other stakeholders to understand data requirements and deliver phased solutions that meet test and quality programs data needs, and support AI model training and inference.
+
+Qualifications
+Required/Minimum Qualifications 
+Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 4+ years experience in business analytics, data science, software development, data modeling or data engineering work
+OR Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 3+ years experience in business analytics, data science, software development, or data engineering work
+OR equivalent experience.
+4+ years of experience in software or data engineering, with proven proficiency in C# and one scripting language for data retrieval and manipulation (e.g., SQL or KQL).
+4+ years of experience with ETL and data cloud computing technologies, including Azure Data Lake, Azure Data Factory, Azure Synapse, Azure Logic Apps, Azure Functions, Azure Data Explorer, and Power BI or equivalent platforms.
+3+ years of experience in MLOps, covering the entire machine learning lifecycle: data ingestion, preprocessing, model training, validation, deployment, and monitoring.
+
+Additional or Preferred Qualifications 
+Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 8+ years experience in business analytics, data science, software development, data modeling or data engineering work
+OR Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 6+ years of business analytics, data science, software development, data modeling or data engineering work experience
+OR equivalent experience.
+2+ years of demonstrated experience implementing data governance practices, including data access, security and privacy controls and monitoring to comply with regulatory standards.
+Experience building APIs and services using REST
+
+Data Engineer
+
+Overview
+Cloud Operations + Innovation (CO+I) is the team behind one of the World’s largest Cloud Infrastructures, responsible for powering all Microsoft online Products and Services as well as powering Microsoft’s “Cloud First” mission. Our focus is on smart growth, high efficiency, and deliver trusted experience to customers and partners worldwide, and we are looking for a passionate Data Engineer to help achieve that mission.    
+If you want to have a fundamental impact on how Microsoft’s Cloud is deployed and operated globally, be involved with one of the most strategically important teams at Microsoft, and have sound technical and business acumen, and leadership, creativity, and out-of-the-box thinking are some of the skills you bring to the table - this job is for you!    
+
+Responsibilities
+As a Data Engineer, you will partner with various teams to develop business requirements to standardize the business input and develop a long-term vision. CO+I continue to invest heavily in business intelligence and data science, and you have the opportunity to lay the foundation for the work we do in these areas. 
+Designing and implementing data solutions that drive business impact. Turning data chaos into scalable, efficient, and automated solutions. 
+Design, implement and build data models and pipelines that deliver data with measurable quality under the service level agreement. 
+Partner with product teams, data analysts and engineering teams to build foundational data sets that are trusted, well understood, and aligned with business strategy. Work with the team and stakeholders to scope and prioritize solutions. 
+Follow rigorous engineering processes to ensure service quality, delivery of new capabilities, and continuously improving metrics. 
+Understand Microsoft security and privacy guidelines and bring the system in compliance. 
+Understand Big Data strategy and implement a scalable data platform. 
+
+Qualifications
+Required Qualifications: 
+Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 2+ years experience in business analytics, data science, software development, data modeling or data engineering work
+OR Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 1+ year(s) experience in business analytics, data science, software development, or data engineering work
+OR equivalent experience.
+2+ years of experience building highly scalable applications, specifically with coding languages such as Python and SQL (Structured Query Language).
+ 
+Other Requirements: 
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+
+Preferred Qualifications: 
+3+ years of software engineering experience including building a large-scale data platform. 
+3+ years of experience building highly scalable applications. 
+Experience creating high-quality data pipelines. 
+Proven experience in version control and CI/CD (Continuous integration and continuous delivery) tools.
+Extensive experience in pioneering, scaling, and optimizing data pipelines, data storage, large-scale data processing/analytics platform, dashboards 
+

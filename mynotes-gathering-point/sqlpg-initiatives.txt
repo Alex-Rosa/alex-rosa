@@ -1,0 +1,178 @@
+Olá Hugo,
+ 
+Dias ocupados pra você e eu pingando, mas como sou abusado heim! 
+ 
+Qual a melhor forma (palavras) para ter atenção de um PM ou ter mais chances de aceitar a participar?
+ 
+O meu time está com uma iniciativa de Global Readiness, a mesma que você já participou antes conosco, mas dessa vez temos uma parceria com o time de Microsoft Learning parar criar algo mais no formato de "learning bites".
+ 
+E vamos enviar alguns email para o time de produto perguntando se eles querem participar, algo do tipo:
+ 
+What We Need:
+Short video recordings (5-10 minutes, up to 30 minutes) on topics related to your area of expertise: Azure Backup and Site Recovery.
+ 
+ 
+Mas conversando hoje com o meu time, pensei em deixar a "area of expertise" em aberto para o(a) PM escolher o que ele(a) tem interesse de acordo com as prioridades e negocios de cada um.
+ 
+Por isso da pergunta no inicio dessa mensagem. É muita loucura isso ou é possivel achar palavras chaves.
+ 
+Eu diria que a forma mais fácil seria falando diretamente com os M2s.
+M2 = Dono do produto.
+M1 = Dono de um portifolio do produto.
+ICs = Dono de features dentro do portifolio.
+
+(CVP Shireesh Thota)
+M2s:
+Anna = Fabric.
+Muazma = Azure SQL and AI
+Joe Sack = SQL Server.
+Borko = Azure SQL MI.
+Denzil Ribeiro = PostgreSQL
+
+
+Manda um email para os 4 com algumas sugestões de tema que vocês acham interessante, na prática eles vão cascatear isso para os M1s, que vão procurar voluntários.
+ 
+Normalmente tem muitas iniciativas em paralelo com escopo parecido, sejam eventos externos, data exposed, eventos internos ou coisas do tipo. A diferença é sempre na duração, público alvo e o escopo. Então tentar deixar claro qual a audiência (e quantas pessoas, quais roles), e qual o formato (live, gravação, whiteboard, workshop)
+ 
+Vou vender uma ideia pra vc que acho que seria incrível (pelo menos seria incrível pra gente, PM), e que até agora nada funcionou bem.
+Por incrível que pareça PM tem problema de chegar em cliente, tem que passar primeiro com ATU e\ou o cliente assinar NDA diretamente com a gente. Estamos sempre procurando formas de abrir o canal de comunicação com os clientes. 
+ 
+Seria muito legal se houvesse um canal onde a gente pudesse sentar com os CSAs mais dedicados a clientes\industrias e eles forem dando exemplo reais do que poderia ser melhorado e dúvidas desses clientes. 
+ 
+Por exemplo, hoje tivemos uma conversa com os CSAs da UBS e da Black Rock, mas porque os CSAs conheciam a gente e pediram pra marcar um "customer profile" meeting.
+ 
+Hugo Queiroz
+Vou vender uma ideia pra vc que acho que seria incrível (pelo menos seria incrível pra gente, PM), e que até agora nada funcionou bem.  Por incrível que pareça PM tem problema de chegar em cliente, tem que passar primeiro com ATU e\ou o cliente assinar NDA diretamente com a gente. Estamos sempre pr…
+
+Entendi, isso imagino que consigo até que facilmente, pois vou te passar o que muitos CSAs acham: PMs são dificeis de conversar com eles.
+
+ 
+Se eu convidar os Leads dos times aqui e de outros lugares para compartilhar e debater com PMs, a aceitação é quase que 100% dos que conheço e são muitos e de todas as regiões.
+ 
+Black Rock, Ruben Gonzalez, talvez tenha participado, ele é um dos CSA lideres da Black Rock pro meu time.
+ 
+Falei com ele Hoje
+ 
+Hugo Queiroz
+Eu diria que a forma mais fácil seria falando diretamente com os M2s.  M2 = Dono do produto.  M1 = Dono de um portifolio do produto.  ICs = Dono de features dentro do portifolio.     M2s:  Anna = Fabric.  Muazma = Azure SQL.  Joe Sack = SQL Server.  Borko = Azure SQL MI.     Manda um email para os …
+
+Valeu, ajuda bastante. Vou fazer isso.
+
+ 
+Queria entender mais porque é difícil falar com PM, honestamente, porque do nosso lado falar com cliente é prioridade. Dito isso, a gente recebe 1k+ emails por dia, então se não tiver o @pm_name vai cair no esquecimento. 
+E do nosso lado, falar com cliente é sempre um parto, porque ATU sempre tenta atrelar a venda, deal, enquanto a gente quer unfiltered feedback. E nos nossos sistemas, só temos como ponto de contato ATU.
+ 
+Hugo Queiroz
+Vou vender uma ideia pra vc que acho que seria incrível (pelo menos seria incrível pra gente, PM), e que até agora nada funcionou bem.  Por incrível que pareça PM tem problema de chegar em cliente, tem que passar primeiro com ATU e\ou o cliente assinar NDA diretamente com a gente. Estamos sempre pr…
+
+E se eu te falar que eu pelo menos já pedi isso ano passado.
+
+Quando ajudei um pouco a convidar clientes pro Entreprise Voice.
+ 
+Perguntei se teriamos acesso ao canal interno, mas ouvi que somente os clientes. Ai eu disse, mas nós CSAs estamos com eles com frequencia e ouvimos coisas que podem ajuda-los, mas não entramos no canal.
+ 
+Hugo Queiroz
+Queria entender mais porque é difícil falar com PM, honestamente, porque do nosso lado falar com cliente é prioridade. Dito isso, a gente recebe 1k+ emails por dia, então se não tiver o @pm_name vai cair no esquecimento.   E do nosso lado, falar com cliente é sempre um parto, porque ATU sempre tent…
+
+Alguns de seus colegas ignoram alguns CSAs, não sei se é a forma que o CSA os aborda, ou que acontece.
+
+E tambem o CSA não tem habilidade de comunicação e acha que o PM é um "semi-deus" pra ser sincero, alguem que ele não tem acesso.
+ 
+Pra ser sincero eu não conheço nenhum PM que negaria a oportunidade de falar com qualquer um cliente, ou com um CSA sobre um cliente. Dito isso agenda é geralmente a pior coisa.
+Formalmente não temos nenhum procedimento\formato sobre como engajar\não engajar. Se estão colocando alguma barreira sobre "só pode falar com cliente X ou Y", essa limitação não veio de nós, isso te garanto.
+ 
+Ou talvez tivesse isso no passado, acabou e continuou como "verdade"
+ 
+Vamos lá,
+Então se ...
+ 
+1- eu captar nomes de CSAs interessados e seu respectivos clientes
+2- captar nomes de PMs que tenham interesse
+3- Criar uma reunião (mensal ???)
+4- Captar e definir assuntos a serem abordados/compartilhados.
+5- Prover e receber feedback de ambos lados
+ 
+Algo assim?
+ 
+ 
+Nem precisa captar nome de PMs, isso a gente resolve. CSAs, clientes, capturar casos de como eles usam o produto, quais as principais dores, é mais do que suficiente. Em relação a frequencia, nem precisa fixar agora, até porque eu acho 1 mes muito tempo. Na prática tentamos falar com 1-2 clientes por dia. 
+ 
+ 
+Por exemplo, recentemente tivemos uma conversa com o governo de singapura para entender porque diabos eles escolheram uma determinada sku do SQL, que não é boa pra eles, e não é boa pra nós. Ai fomos entender que era uma questão de capacity da região + falta de entendimento. Ajudamos na capacity, eles migraram pra sku certa, economizaram grana, todos felizes.
+ 
+Entendi mehor agora, é um envolvimento bem mais ativo e direto do que imaginei. Muito bom.
+ 
+Estamos falando de clientes com um tamanho (relacionamento com a MS) minimo de ?!?! ou qualquer um?
+ 
+Pergunto, pois SfMC tem alguns clientes que não são S500.
+ 
+Tudo bem.
+ 
+Acho que a gente pode variar, para os baleias a gente segmenta um pouco, para os pequenos a gente junta os feedbacks, sei lá. 
+ 
+Ultima pergunta:
+ 
+Se vcs tentam conversar com 1-2 clientes por dia, se eu tiver uma necessidade, qual o tempo de resposta vc imagina eu posso considerar para ter um PM falando com o cliente?
+ 
+Pensando em setar a expectativa com clientes e o que consigo esperar.
+ 
+Sei que tem varios fatores, mas apenas para ter uma ideia.
+ 
+Alex Rosa
+Ultimo exemplo que eu soube:      📷       📷
+
+Reconheço ela, acho que tive uma reunião com a bridgewater com ela.  Sobre o push back, não sei de onde veio isso. Um detalhe é que o Drew é bastante ironico e sarcástico, ele é gente finíssima, mas já houve cenários onde eu acho que ele fez uma brincadeira e eu fiquei na dúvida se o povo não-americano entendeu. 
+
+ 
+Sim, ela é a lead dde Bridgewater pro meu time.
+ 
+Alex Rosa
+Ultima pergunta:     Se vcs tentam conversar com 1-2 clientes por dia, se eu tiver uma necessidade, qual o tempo de resposta vc imagina eu posso considerar para ter um PM falando com o cliente?     Pensando em setar a expectativa com clientes e o que consigo esperar.
+
+Se for um caso importante\block, de um cliente grande, na mesma semana. 
+
+ 
+Hugo Queiroz
+Reconheço ela, acho que tive uma reunião com a bridgewater com ela.  Sobre o push back, não sei de onde veio isso. Um detalhe é que o Drew é bastante ironico e sarcástico, ele é gente finíssima, mas já houve cenários onde eu acho que ele fez uma brincadeira e eu fiquei na dúvida se o povo não-ameri…
+
+Foi o que eu imaginei, por isso pedi pra ela voltar a conversar, esse é o exemplo de pessoa que disse que tem medo de conversar com PMs
+
+ 
+Tem um lançe que é o seguinte, PM geralmente não vai se envolver em coisas que outras roles podem resolver. Como a maioria dos PMs está sempre morrendo de fazer hora extra, qualquer coisa que chega tem que passar no filtro "é só o PM que consegue resolver  sim ou não?". Se for uma IcM, ou algo que tem roles\times pra resolver, ou tem processo, ele vai tirar a mão.
+ 
+Por isso que o foco do escopo sempre tem que ser o cliente, como o cliente está usando o produto, porque escolheu, o que funciona, o que não funciona. O que fazer para ele usar mais. Se tem um bug aqui, outro ali, ou se essa semana está com problema no CSS, PM vai ouvir, mas não vai se envolver diretamente.
+ 
+Alguem de AI para adicionar a lista?
+ 
+M2s:
+Anna = Fabric.
+Muazma = Azure SQL.
+Joe Sack = SQL Server.
+Borko = Azure SQL MI.
+ 
+"Ah mais seria incrível se o PM fizesse um workshop de ..." Tem outros times que deveria fazer isso, PM vai fazer se for último caso.
+ 
+Ou talvez vai fazer para que o time tenha o que precisa pra conseguir criar essas coisas.
+ 
+Alex Rosa
+Alguem de AI para adicionar a lista?     M2s:  Anna = Fabric.  Muazma = Azure SQL.  Joe Sack = SQL Server.  Borko = Azure SQL MI.
+
+Muazma
+
+ 
+Faz sentido, senão vão pedir até para servir café... o que acho que vc e João aceitariam (pois gostam de café), mas nem todos 
+ 
+kkkkk
+ 
+É essa a questão, PM pode fazer tudo, porém raramente tem tempo de fazer o mínimo. Então é muito tentador gastar tempo fazendo algo que na prática, se o PM não fizer outra pessoa faz e o resultado final seria o mesmo. Eu sou culpado disso, passei 2 dias brigando com um IcM porque o dev do meu time não sabia resolver. Moral da história, Hugo trabalhou no final de semana porque usou o tempo brincando de SQL enquanto deveria estar fazendo o planejamento. E na prática, se eu não fizesse o Dev iria eventualmente achar outro dev principal que saberia como resolver e daria no mesmo.
+ 
+Você faloud e AI, vou aproveitar para puxar outro tema. Essa organização de M2 = dono de produto é meramente uma questão de ownership financeiro, não lógico, na prática os portifolios (M1 e ICs) trabalham "across" todos os produtos. Para os PMs ICs, não interessa se é sql, sql mi, azure sql db, fabric, o portifolio é across todos os produtos. Porém quando sobe para o nível de liderança é feito o drill down de custo\lucro\consumo\NPS, ai os M2s que entram na jogada e fazem a segmentação por produto.
+ 
+No caso de AI, Muazma vai ser o melhor contato e ela vai te direcionar para o Brian, Davide ou Anita que são quem pilotam individualmente as features de AI
+ 
+interessante, bom saber disso.
+ 
+Obrigado, vou trabalhar nos pontos que citou.
+Não vou tomar mais o seu tempo, pois vc tem uma apresentação surpresa que espero que não seja mais surpresa 
+ 
+ 
