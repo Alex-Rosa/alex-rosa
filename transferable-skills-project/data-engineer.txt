@@ -105,3 +105,35 @@ Experience creating high-quality data pipelines.
 Proven experience in version control and CI/CD (Continuous integration and continuous delivery) tools.
 Extensive experience in pioneering, scaling, and optimizing data pipelines, data storage, large-scale data processing/analytics platform, dashboards 
 
+
+Senior Data Engineer- Microsoft Designer
+
+Overview
+Senior Data Engineer- Microsoft Designer 
+Join us as we grow Microsoft Designer, an AI-powered content creation app. We're scaling the service and pushing the limits of machine learning to help our users create the world’s best presentations, documents and designs. Our team is at the forefront of developing scalable services and world class UI that is deeply integrated into various Microsoft applications. 
+As a Senior Data Engineer, you will design, build, and optimize scalable data pipelines, ensuring they efficiently process and transform large datasets while maintaining high performance and reliability. You’ll collaborate with cross-functional teams to gather requirements and deliver insights that drive business decisions, while implementing data quality measures and anomaly detection systems. Additionally, you will mentor other engineers, lead innovation efforts by evaluating new technologies, and ensure compliance with privacy and security standards across all data systems. 
+This position is remote-eligible within the U.S., with a preference for the Greater Seattle area or Mountain View, CA for occasional on-site collaboration. Relocation support is not provided
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond. 
+
+Responsibilities
+Design, build and deploy robust, high-performance data pipelines to process large datasets from diverse sources. 
+Continuously optimize, test, and maintain data pipelines, ensuring they run efficiently, scale with data growth, and meet performance and reliability standards. 
+Develop processes to monitor data quality, detect anomalies, and implement automated data validation, alerting, and anomaly detection. 
+Lead efforts to ensure data engineering practices comply with relevant privacy, security, and regulatory standards. 
+Work closely with data scientists, product managers, and other stakeholders to gather requirements, define data needs, and deliver actionable insights that drive business decisions. 
+Analyze datasets and build dashboards to provide actionable insights that influence strategic decisions, ensuring the data supports business objectives and drives outcomes. 
+Proactively identify and evaluate emerging technologies, tools, and techniques to drive innovation and continuously improve the data engineering ecosystem 
+
+Qualifications
+Required Qualifications
+Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 4+ years experience in business analytics, data science, software development, data modeling or data engineering work
+OR Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 3+ years experience in business analytics, data science, software development, data modeling or data engineering work
+OR equivalent experience.
+2+ years experience with big data systems and tools, such as Azure Synapse, PySpark, Databricks, or Azure Data Factory
+2+ years experience in query languages (e.g., KQL, SQL). 
+2+ years experience with object-oriented programming languages (e.g., Python, C#, Java, or C++). 
+Preferred Qualifications
+8+ years of experience in software development or data engineering. 
+4+ years experience with big data systems and tools, such as Azure Synapse or Azure Data Factory. 
+2+ years  of demonstrated direct experience in building and managing data systems in the cloud. 
+2+ years of demonstrated direct experience in using data to drive business growth. 
