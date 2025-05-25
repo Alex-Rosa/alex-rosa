@@ -3,7 +3,7 @@
 - 🔭 I’m currently working on making my GitHub repositories public.
 - 🌱 I’m currently learning Python and Non-SQL databases.
 - 💬 Ask me about SQL Server and PostgreSQL.
-- 📫 How to reach me: LinkedIn messages is my preferable method of contact.
+- 📫 How to reach me: LinkedIn messages is my preferred method of contact.
 
 <!--
 **Alex-Rosa/Alex-Rosa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
