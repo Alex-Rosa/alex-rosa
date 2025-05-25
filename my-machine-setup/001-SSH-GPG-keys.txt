@@ -1,0 +1,138 @@
+SSH keys and GPG keys serve different purposes in GitHub:
+
+- **SSH keys**: These are used for authentication. When you want to securely connect to GitHub, such as when cloning repositories or pushing changes over SSH, an SSH key verifies your identity without needing a password.
+- **GPG keys**: These are used for signing commits and tags. A GPG key helps verify that a commit or tag was truly made by you and not altered by someone else, adding an extra layer of trust.
+
+### Should you have both?
+It depends on how you use GitHub:
+- If you regularly push code using SSH, then having an **SSH key** is essential.
+- If you want your commits to be cryptographically verified and marked as "verified" in GitHub, then using a **GPG key** is beneficial.
+- Many developers use **both**, since SSH keys handle authentication while GPG keys ensure commit integrity.
+
+----------------------------------
+
+Remove vs. Replace
+Remove: If you no longer need the key or are concerned about security (e.g., you suspect it was compromised), deleting it entirely is the safest option.
+
+Replace: If your current key is outdated, or you simply want a fresh start without losing access to repositories or commit verification, generating a new key and updating GitHub is the better approach.
+
+When to Replace
+Your SSH key is older and using RSA instead of Ed25519 (Ed25519 is more secure).
+
+Your GPG key expires soon, but you still want commit verification.
+
+You’re switching devices and need a new key for authentication.
+
+When to Remove
+You no longer use GitHub or don’t need SSH/GPG authentication.
+
+You suspect your private key has been compromised.
+
+You want to simplify and reduce unnecessary security credentials.
+
+----------------------------------
+
+If you want to remove existing SSH or GPG keys, here’s how:
+
+Removing an SSH key
+Delete the SSH key from GitHub
+
+Go to GitHub SSH settings.
+
+Find the key you want to remove and click "Delete."
+
+Delete the key from your local machine
+
+Run:
+
+bash
+rm -f ~/.ssh/id_ed25519 ~/.ssh/id_ed25519.pub
+If you're using an RSA key, replace id_ed25519 with id_rsa.
+
+Remove the key from your SSH agent
+
+bash
+ssh-add -d ~/.ssh/id_ed25519
+Removing a GPG key
+Delete the GPG key from GitHub
+
+Go to GitHub GPG settings.
+
+Locate the key and click "Delete."
+
+Delete the key from your local machine
+
+First, list your keys:
+
+bash
+gpg --list-secret-keys --keyid-format=long
+Then delete the key:
+
+bash
+gpg --delete-secret-key YOUR_KEY_ID
+gpg --delete-key YOUR_KEY_ID
+
+----------------------------------
+
+Here’s how to set up both SSH and GPG keys in GitHub:
+
+### **Setting up an SSH key**
+1. **Check for existing keys**  
+   Open a terminal and run:  
+   ```bash
+   ls ~/.ssh/id_*
+   ```
+   If you see `id_rsa` or `id_ed25519`, you might already have an SSH key.
+
+2. **Generate a new SSH key (if needed)**  
+   Run this command to generate a new SSH key (using Ed25519 for better security):  
+   ```bash
+   ssh-keygen -t ed25519 -C "your-email@example.com"
+   ```
+   Replace `"your-email@example.com"` with your GitHub email.
+
+3. **Add the key to your SSH agent**  
+   ```bash
+   eval "$(ssh-agent -s)"
+   ssh-add ~/.ssh/id_ed25519
+   ```
+
+4. **Add the SSH key to GitHub**  
+   - Copy the public key:
+     ```bash
+     cat ~/.ssh/id_ed25519.pub
+     ```
+   - Go to [GitHub SSH settings](https://github.com/settings/keys), click "New SSH Key," paste the key, and save.
+
+### **Setting up a GPG key**
+1. **Install GPG** (if not installed)  
+   ```bash
+   sudo apt install gpg  # Linux  
+   brew install gnupg  # macOS  
+   ```
+   Windows users can download Gpg4win [here](https://gpg4win.org/).
+
+2. **Generate a GPG key**  
+   ```bash
+   gpg --full-generate-key
+   ```
+   Select RSA and at least 4096 bits.
+
+3. **List your keys**  
+   ```bash
+   gpg --list-secret-keys --keyid-format=long
+   ```
+
+4. **Copy and add the key to GitHub**  
+   ```bash
+   gpg --armor --export YOUR_KEY_ID
+   ```
+   - Go to [GitHub GPG settings](https://github.com/settings/keys), click "New GPG Key," paste the key, and save.
+
+5. **Tell Git to sign commits**  
+   ```bash
+   git config --global user.signingkey YOUR_KEY_ID
+   git config --global commit.gpgsign true
+   ```
+
+Once set up, your SSH key will securely authenticate with GitHub, while your GPG key will verify your commits.
