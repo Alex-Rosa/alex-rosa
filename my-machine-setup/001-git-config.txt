@@ -5,8 +5,8 @@ notepad ~/.gitconfig
 
     [user]
         name = Alex Rosa
-        email = alex-rosa@outlook.com
-        signingkey = 1A0488C3FA4E65DDCCDB49AD4A11F4D3BF836E8A
+        email = <MY EMAIL HERE>
+        signingkey = <MY SIGN IN KEY HERE>
     [filter "lfs"]
         clean = git-lfs clean -- %f
         smudge = git-lfs smudge -- %f
