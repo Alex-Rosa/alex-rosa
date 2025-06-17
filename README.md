@@ -1,5 +1,7 @@
 # Hi there 👋
 
+## Explore my Digital Hub at https://bit.ly/m/AlexRosa
+
 - 🔭 I’m currently working on making my GitHub repositories public.
 - 🌱 I’m currently learning Python and Non-SQL databases.
 - 💬 Ask me about SQL Server and PostgreSQL.
