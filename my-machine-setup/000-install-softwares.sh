@@ -41,6 +41,15 @@ which git # Check which Git version is being used
 # Install GitHub CLI via Homebrew
 brew install gh
 #### Source and Version Control Tools
+
+# After adding GPG to your system, you can configure Git to use it for signing commits:
+brew install pinentry-mac # Install pinentry-mac via Homebrew
+echo "pinentry-program $(which pinentry-mac)" >> ~/.gnupg/gpg-agent.conf # Configure GPG to use pinentry-mac
+gpgconf --kill gpg-agent # Restart the GPG agent to apply the changes
+# Important Note for Terminal Users
+# If you are using the default macOS Terminal app, you need to set the GPG_TTY environment variable. Add the following line to your ~/.zshrc or ~/.bash_profile file, depending on your shell
+echo 'export GPG_TTY=$(tty)' >> ~/.zshrc # Add GPG_TTY to your shell configuration
+source ~/.zshrc # Reload your shell configuration
 #-----------------------------------------------
 
 #-----------------------------------------------
