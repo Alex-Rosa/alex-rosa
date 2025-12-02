@@ -55,7 +55,7 @@ source ~/.zshrc # Reload your shell configuration
 #-----------------------------------------------
 #### Low Level Programming Language
 
-# Java
+# Java installed via Homebrew
 
 #### Low Level Programming Language
 #-----------------------------------------------
