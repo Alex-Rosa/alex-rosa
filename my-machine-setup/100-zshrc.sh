@@ -33,6 +33,10 @@ fi
 # Add Java (OpenJDK) to PATH
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+# Go config
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # Add your specific Git Repo scripts folder to the PATH
 # This allows you to run executable scripts located in this folder
 export PATH="$HOME/MyFiles/MyGitRepository/alex-rosa/my-scripts:$PATH"
@@ -71,6 +75,7 @@ else
 fi
 
 # --- Terminal Logging Functions ---
+
 # 1. Archive logs older than 30 days (Compresses to .gz)
 # Usage: Runs automatically inside start_log, or type 'archive_logs' manually
 function archive_logs() {

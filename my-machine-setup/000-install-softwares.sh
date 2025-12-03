@@ -67,7 +67,6 @@ brew install --cask visual-studio-code
 
 # Install Python via Homebrew
 # brew install python
-
 # Install Anaconda via Anaconda Installer
 # download anaconda3  # Data Science (already include Python Standard Library and Conda Package Manager for Python)
 conda create --name alrosa_env python=3.11 # Create a new conda environment with Python 3.11
@@ -80,6 +79,10 @@ conda env list #List all environments
 conda env remove --name my_env_name # Delete an environment
 conda create --name new_env --clone old_env # Clone an environment
 conda env export > environment.yml # Export list of packages
+
+brew install go # Install Go via Homebrew
+go version # Check Go version
+
 #### High Level Programming Language
 #-----------------------------------------------
 
