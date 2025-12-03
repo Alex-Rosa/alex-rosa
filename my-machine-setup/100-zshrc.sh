@@ -70,6 +70,77 @@ else
     echo "Warning: Could not find custom Git functions at $CUSTOM_GIT_FUNCTIONS"
 fi
 
+# --- Terminal Logging Functions ---
+# 1. Archive logs older than 30 days (Compresses to .gz)
+# Usage: Runs automatically inside start_log, or type 'archive_logs' manually
+function archive_logs() {
+    local log_dir="$HOME/MyFiles/MyTerminalHistory"
+    
+    # Check if directory exists first
+    if [ -d "$log_dir" ]; then
+        # Find files ending in .log or .txt that are older (+30) than 30 days
+        # -exec gzip {} runs compression on each file found
+        # gzip replaces the original file with a .gz file automatically
+        find "$log_dir" -type f \( -name "*.log" -o -name "*.txt" \) -mtime +30 -exec gzip "{}" \;
+    fi
+}
+
+# 2. Start a new log session (With auto-archiving)
+# Usage: Type 'start_log'
+function start_log() {
+    # Define the directory
+    local log_dir="$HOME/MyFiles/MyTerminalHistory"
+    
+    # Create directory if it doesn't exist
+    if [ ! -d "$log_dir" ]; then
+        mkdir -p "$log_dir"
+    fi
+
+    # --- Maintenance Step ---
+    # Run the archive function silently in the background
+    archive_logs &
+
+    # Create filename with current timestamp
+    local timestamp=$(date "+%Y-%m-%d_%H-%M-%S")
+    local log_file="${log_dir}/session_${timestamp}.log"
+
+    echo "🔴 Recording started. Saving to: $log_file"
+    echo "Type 'exit' or press Ctrl+D to stop recording."
+    
+    # Start the script command
+    script "$log_file"
+}
+
+# 3. Clean up log files (Auto-detects most recent if no file provided)
+# Usage: Type 'clean_log' (for newest) OR 'clean_log <filename>'
+function clean_log() {
+    local log_dir="$HOME/MyFiles/MyTerminalHistory"
+    local input_file="$1"
+
+    # --- Scenario A: No filename provided ---
+    if [ -z "$input_file" ]; then
+        input_file=$(ls -t "${log_dir}"/*.log 2>/dev/null | head -n 1)
+
+        if [ -z "$input_file" ]; then
+            echo "❌ Error: No log files found in $log_dir to clean."
+            return 1
+        fi
+        echo "ℹ️  No filename provided. Selecting most recent: $(basename "$input_file")"
+    fi
+
+    # --- Scenario B: Validation ---
+    if [ ! -f "$input_file" ]; then
+        echo "❌ Error: File '$input_file' not found."
+        return 1
+    fi
+
+    # --- Scenario C: Processing ---
+    local output_file="${input_file%.*}_clean.txt"
+    cat "$input_file" | col -b | perl -pe 's/\e\[?.*?[\@-~]//g' > "$output_file"
+
+    echo "✅ Cleaned log saved as: $output_file"
+}
+
 # ==============================================
 # 5. PROMPT & VISUALS
 # ==============================================
