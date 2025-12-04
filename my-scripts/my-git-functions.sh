@@ -1,47 +1,133 @@
-# Function to Parse the Current Git Branch with Error Handling
+# Organized into the "Software Development Lifecycle" (SDLC)
+
+# ==============================================================================
+# PHASE 0: SETUP & UTILITIES
+# Use these once or for script helpers.
+# ==============================================================================
+
+# Login to GitHub CLI
+# Usage: Run once when setting up a new computer or if your token expires.
+gh_login() {
+    gh auth login
+}
+
+# Parse Current Git Branch
+# Usage: Mostly a helper function for other scripts or your terminal prompt 
+# to show which branch you are currently on.
 parse_git_branch() {
-    # Check if the current directory is a Git repository
     if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-        # If it is, return the current branch
         git rev-parse --abbrev-ref HEAD
     else
-        # If it isn't, return an message
         echo "Not a Git Repository"
     fi
 }
 
-# Function to issue Git Status
-gs() {
-    git status --verbose --verbose --untracked-files=all
-}
+# ==============================================================================
+# PHASE 1: INSPECTION (Where am I?)
+# Use these constantly to understand your context before making changes.
+# ==============================================================================
 
-# Function to issue Git Add
-ga() {
-    git add . --verbose --ignore-removal
-}
-
-# Function to issue signed Git Commit Dry Run (verbose - difference review)
-gcdr() {
-    git commit --dry-run --long --all --branch --gpg-sign --verbose --verbose --message "$1"
-}
-
-# Function to issue signed Git Commit
-gc() {
-    git commit --all --branch --gpg-sign --verbose --verbose --message "$1"
-}
-
-# Function to issue Git Push Dry Run
-gpdr() {
-    git push --dry-run --set-upstream --verbose
-    }
-
-# Function to issue Git Push
-gp() {
-    git push --set-upstream --verbose
-}
-
-# Function to show branch 
+# Show Branch List
+# Usage: Run this to see all local/remote branches and confirm which one you are on.
 gb() {
     git branch --all --list --verbose --verbose
 }
 
+# Show Git Status
+# Usage: Run this FREQUENTLY. Run it before you add, before you commit, 
+# and before you switch branches. It shows what has changed.
+gs() {
+    git status --verbose --verbose --untracked-files=all
+}
+
+# Git Log Graph
+# Usage: Visualize your commit history and branches in a colorful tree structure.
+gl() {
+    git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
+}
+
+# ==============================================================================
+# PHASE 2: STAGING & COMMITTING (Saving Local Work)
+# Use these to "Save" your game locally.
+# ==============================================================================
+
+# Git Add (The "Shopping Cart")
+# Usage: Run when you are happy with your changes and ready to prepare them for a commit.
+ga() {
+    git add . --verbose
+}
+
+# Undo Last Commit
+# Usage: Run if you committed too early. It undoes the commit but KEEPS your work staged.
+gundo() {
+    git reset --soft HEAD~1
+    echo "Last commit undone. Changes are still staged."
+}
+
+# Git Commit Dry Run (The "Preview")
+# Usage: Run this if you are paranoid/careful. It shows you exactly what *would* happen 
+# if you committed right now, without actually doing it.
+gcdr() {
+    git commit --dry-run --long --all --branch --gpg-sign --verbose --verbose --message "$1"
+}
+
+# Git Commit (The "Purchase")
+# Usage: Run this to permanently save your staged changes to your local history.
+# It automatically GPG signs your work.
+# Example: gc "Fixed the login button"
+gc() {
+    git commit --all --branch --gpg-sign --verbose --verbose --message "$1"
+}
+
+# ==============================================================================
+# PHASE 3: SYNCING (Uploading to Cloud)
+# Use these to move your local saves to GitHub.
+# ==============================================================================
+
+# Git Push Dry Run (The "Upload Preview")
+# Usage: Run before pushing if you want to ensure you aren't overwriting something 
+# unexpected on the server.
+gpdr() {
+    git push --dry-run --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)" --verbose
+}
+
+# Git Push (The "Upload")
+# Usage: Sends your committed changes to GitHub.
+# It automatically links your local branch to the remote one (upstream).
+gp() {
+    git push --set-upstream origin "$(git rev-parse --abbrev-ref HEAD)" --verbose
+}
+
+# ==============================================================================
+# PHASE 4: DELIVERY (Pull Request)
+# Use this when your feature is done and ready to merge.
+# ==============================================================================
+
+# Create Pull Request
+# Usage: Run this after pushing (gp). It opens a PR to merge your current branch into 'main'.
+# It auto-assigns YOU and adds a label.
+# Example: gh_pr "Fix Login" "This updates the submit button logic"
+gh_pr() {
+    gh pr create --title "$1" --body "$2" --base main --assignee "@me" --label "ready for review"
+}
+
+# ==============================================================================
+# PHASE 5: MAINTENANCE (Housekeeping)
+# Use these to keep your repository clean and synced after merging PRs.
+# ==============================================================================
+
+# Git Main Sync
+# Usage: Updates your local 'main' branch from the server without switching to it.
+gms() {
+    git fetch origin main:main
+    echo "Local 'main' updated from origin."
+}
+
+# Git Branch Cleanup
+# Usage: Deletes local branches that have already been merged into main.
+gb_clean() {
+    git checkout main
+    git pull
+    git branch --merged | grep -v "\*" | grep -v "main" | xargs -n 1 git branch -d
+    echo "Cleaned up merged branches."
+}
