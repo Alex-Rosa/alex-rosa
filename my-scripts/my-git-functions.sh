@@ -15,7 +15,11 @@ gh_login() {
 # Usage: Mostly a helper function for other scripts or your terminal prompt 
 # to show which branch you are currently on.
 parse_git_branch() {
-    if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    # Run the check silently (redirecting both stdout and stderr)
+    git rev-parse --is-inside-work-tree &> /dev/null
+    
+    # Check the exit code of the previous command (0 = Success, Non-zero = Fail)
+    if [ $? -eq 0 ]; then
         git rev-parse --abbrev-ref HEAD
     else
         echo "Not a Git Repository"
@@ -47,7 +51,43 @@ gl() {
 }
 
 # ==============================================================================
-# PHASE 2: STAGING & COMMITTING (Saving Local Work)
+# PHASE 2: BRANCHING (Navigation)
+# Use these to create, switch, and manage your workspace.
+# ==============================================================================
+
+# Git Checkout (Switch)
+# Usage: Switch to an existing branch.
+# Example: gco main
+gco() {
+    git checkout "$1"
+}
+
+# Git Checkout New Branch (Create)
+# Usage: Creates a new branch off your current location and switches to it.
+# Use this when starting a new task.
+# Example: gcb "feature/user-login"
+gcb() {
+    git checkout -b "$1"
+}
+
+# Git Branch Delete (Specific)
+# Usage: Deletes a specific local branch.
+# SAFE MODE: This will fail if the branch has unmerged changes (protecting your work).
+# Example: gbd "feature/old-test"
+gbd() {
+    git branch -d "$1"
+}
+
+# Git Branch Rename
+# Usage: Renames the CURRENT branch you are standing on.
+# Use this if you made a typo in the branch name.
+# Example: gbm "feature/login-fixed"
+gbm() {
+    git branch -m "$1"
+}
+
+# ==============================================================================
+# PHASE 3: STAGING & COMMITTING (Saving Local Work)
 # Use these to "Save" your game locally.
 # ==============================================================================
 
@@ -80,7 +120,7 @@ gc() {
 }
 
 # ==============================================================================
-# PHASE 3: SYNCING (Uploading to Cloud)
+# PHASE 4: SYNCING (Uploading to Cloud)
 # Use these to move your local saves to GitHub.
 # ==============================================================================
 
@@ -99,7 +139,7 @@ gp() {
 }
 
 # ==============================================================================
-# PHASE 4: DELIVERY (Pull Request)
+# PHASE 5: DELIVERY (Pull Request)
 # Use this when your feature is done and ready to merge.
 # ==============================================================================
 
@@ -112,7 +152,7 @@ gh_pr() {
 }
 
 # ==============================================================================
-# PHASE 5: MAINTENANCE (Housekeeping)
+# PHASE 6: MAINTENANCE (Housekeeping)
 # Use these to keep your repository clean and synced after merging PRs.
 # ==============================================================================
 
