@@ -148,7 +148,7 @@ gp() {
 # It auto-assigns YOU and adds a label.
 # Example: gh_pr "Fix Login" "This updates the submit button logic"
 gh_pr() {
-    gh pr create --title "$1" --body "$2" --base main --assignee "@me" --label "ready for review"
+    gh pr create --title "$1" --body "$2" --base main --assignee "@me" #--label "ready for review"
 }
 
 # ==============================================================================
