@@ -26,7 +26,7 @@ gh_newrepo() {
     fi
     
     # Creates a public repo, clones it to current directory, and enters the folder
-    gh repo create "$1" --public --clone && cd "$1"
+    gh repo create "$1" --template "alex-rosa/repo-template" --public --clone && cd "$1"
 }
 
 # ------------------------------------------------------------------------------

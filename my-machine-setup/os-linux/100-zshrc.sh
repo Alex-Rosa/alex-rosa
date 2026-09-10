@@ -158,8 +158,19 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
+# Track commands run only in this session
+typeset -g CURRENT_SESSION_CMD_COUNT=0
+_count_session_cmd() {
+  (( CURRENT_SESSION_CMD_COUNT++ ))
+}
+autoload -Uz add-zsh-hook
+add-zsh-hook preexec _count_session_cmd
+
 # Prompt Definition
-# Structure: < Date | Time | Path | Branch | History >
+# Structure: < Date: Thu Sep 10 | Time: 14:42:30 | Working Repo (Path): ~/MyFiles | Working Branch: (main) | Command History: All sessions 840, This Session 7 >
 PROMPT='
-%F{yellow}< Date: %F{green}%D{%a %b %d} %F{yellow}| Time: %F{green}%T %F{yellow}| Path: %F{cyan}%~ %F{yellow}| Branch: %F{cyan}$(parse_git_branch) %F{yellow}| History: %F{green}%! %F{yellow}>%f
+%F{yellow}< Date: %F{green}%D{%a %b %d} %F{yellow}| Time: %F{green}%D{%T} %F{yellow}| Working Repo (Path): %F{cyan}%~ %F{yellow}| Working Branch: %F{cyan}$(parse_git_branch) %F{yellow}| Command History: All sessions %F{green}%!%F{yellow}, This Session %F{green}${CURRENT_SESSION_CMD_COUNT} %F{yellow}>%f
 $ '
+
+# Added by Antigravity
+export PATH="/Users/alexrosa/.antigravity/antigravity/bin:$PATH"
