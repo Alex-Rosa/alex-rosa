@@ -12,7 +12,7 @@ gh_login() {
 }
 
 # ------------------------------------------------------------------------------
-# SCENARIO A: "Cloud First" (Starting from scratch)
+# "Cloud First" (Starting from scratch)
 # ------------------------------------------------------------------------------
 
 # FUNCTION: Create a new public GitHub repo and clone it locally
@@ -26,39 +26,7 @@ gh_newrepo() {
     fi
     
     # Creates a public repo, clones it to current directory, and enters the folder
-    gh repo create "$1" --public --clone && cd "$1"
-}
-
-# ------------------------------------------------------------------------------
-# SCENARIO B: "Local First" (Uploading existing code)
-# ------------------------------------------------------------------------------
-
-# Git Initialize
-# Usage: Turns the current folder into a Git repository.
-# Use this if you have a folder of code that isn't in Git yet.
-git_i() {
-    git init
-    git branch -m main # Renames default 'master' to 'main'
-    echo "Repo initialized. 'master' renamed to 'main'."
-}
-
-# FUNCTION: Connect existing local repo to GitHub
-# Usage: Run this inside a folder where you just ran 'git_i'.
-# It creates the repo on GitHub and pushes your code up.
-gh_connect() {
-    if [ -z "$1" ]; then
-        echo "Error: Please provide a repository name."
-        echo "Usage: gh_connect <repo-name>"
-        return 1
-    fi
-    
-    # 1. Create the repo on GitHub (public by default)
-    # --source=. tells GitHub to use the current folder
-    # --remote=origin connects the local git to the new cloud repo
-    gh repo create "$1" --public --source=. --remote=origin
-    
-    # 2. Push your files
-    git push --set-upstream origin main
+    gh repo create "$1" --add-readme --gitignore Python --license MIT --public --clone && cd "$1"
 }
 
 # ------------------------------------------------------------------------------
