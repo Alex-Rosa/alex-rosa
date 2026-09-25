@@ -39,7 +39,7 @@ export PATH=$PATH:$GOPATH/bin
 
 # Add your specific Git Repo scripts folder to the PATH
 # This allows you to run executable scripts located in this folder
-export PATH="$HOME/MyFiles/MyGitRepository/alex-rosa/my-scripts:$PATH"
+# export PATH="$HOME/MyFiles/MyGitRepo/alex-rosa/my-scripts:$PATH"
 
 # ==============================================
 # 3. PACKAGE MANAGERS (Conda)
@@ -66,7 +66,7 @@ alias reload='source ~/.zshrc'
 
 # Load custom Git functions from MyFiles
 # Note: Using $HOME instead of ~ is safer inside scripts/variables
-CUSTOM_GIT_FUNCTIONS="$HOME/MyFiles/MyGitRepository/alex-rosa/my-machine-setup/git-gh-setup/100-git-functions.sh"
+CUSTOM_GIT_FUNCTIONS="$HOME/MyFiles/MyGitRepo/alex-rosa/my-machine-setup/git-gh-setup/100-git-functions.sh"
 
 if [ -f "$CUSTOM_GIT_FUNCTIONS" ]; then
     source "$CUSTOM_GIT_FUNCTIONS"
